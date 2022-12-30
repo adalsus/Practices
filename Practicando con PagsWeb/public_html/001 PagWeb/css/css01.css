@@ -1,0 +1,39 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 29 dic 2022, 11:37:59
+    Author     : adalsus
+*/
+
+#mi_bmDV01_ {
+    display: none;
+}
+
+#X_bmDV01_, #mi_bmDV01_ {
+    cursor: pointer;
+    background: #000000;
+}
+
+#X_bmDV01_ {
+    display: block;
+    margin-left: auto;
+}
+
+
+.opmm {
+    color: #f0ff00;
+    background: #000000;
+    cursor: pointer;
+}
+
+
+#menumain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f0ff00;
+    background: #000000;
+    height: 3em;
+}
