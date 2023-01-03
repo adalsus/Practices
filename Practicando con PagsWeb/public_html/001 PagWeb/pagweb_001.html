@@ -17,12 +17,38 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 <img id="X_bmDV01_" src="img/32px_X.png" alt="alt" onclick="X_bmDV01_click()"/>
         </div>
         <div id="menumain">
-            <div class="opmm">Inicio</div>
-            <div class="opmm">Tutoriales</div>
-            <div class="opmm">Cursos</div>
-            <div class="opmm">Bootcamps</div>
-            <div class="opmm">Contacto</div>
+            <div    class="opmm" 
+                        onmouseover="mouseOver(0)" 
+                        onmouseout="mouseOut(0)"><pre>     Inicio     </pre>
+            </div>
+            <div    class="opmm" 
+                        onmouseover="mouseOver(1)" 
+                        onmouseout="mouseOut(1)"><pre>  Tutoriales  </pre>
+            </div>
+            <div    class="opmm" 
+                        onmouseover="mouseOver(2)" 
+                        onmouseout="mouseOut(2)"
+                        onclick="opmmCursos_click()"><pre>     Cursos     </pre>
+            </div>
+            <div    class="opmm" 
+                        onmouseover="mouseOver(3)" 
+                        onmouseout="mouseOut(3)"><pre> Bootcamps </pre>
+            </div>
+            <div    class="opmm" 
+                        onmouseover="mouseOver(4)" 
+                        onmouseout="mouseOut(4)"><pre>   Contacto   </pre>
+            </div>
         </div>
+        
+        <img id="img01" src="img/2023.jpg" alt="2023"/>
+        
+        <article id="secCursos">
+            <div id="h2pCursos"><h2 id="h2hCursos">Cursos</h2></div>
+            <section>
+                <h3>Curso de programación en Python</h3>
+            </section>         
+        </article>
+        
         
         <script>
             escuchaWindowSize();
