@@ -10,18 +10,18 @@ function LinkedList() {
     this.head = undefined;
     LinkedList.prototype.gethead = function() {
         return this.head;
-    }
+    };
     LinkedList.prototype.irAtail = function() {
         if (this.vacia()) {
             return 'vacia';
         } else {
             let tail = this.head;
-            while (tail.next!=null) {
+            while (tail.next!==null) {
                 tail = tail.next;
             }
             return tail;
         }
-    }
+    };
     LinkedList.prototype.irAntestail = function() {
         if (this.vacia()) {
             return 'vacia';
@@ -33,32 +33,32 @@ function LinkedList() {
                 let punt = 1;
                 let tope = this.gettamaño()-1;
                 while (punt<tope) {
-                    tail = tail.next
+                    tail = tail.next;
                     ++punt;
                 }
                 return tail;
             }
         }
-    }
+    };
     LinkedList.prototype.gettamaño = function() {
         return this.tamaño===0 ? 'vacia' : this.tamaño;
-    }
+    };
     LinkedList.prototype.vacia = function() {
         return this.tamaño===0 ? true : false;
-    }
+    };
     LinkedList.prototype.getLista = function() {
         if (this.vacia()) {
             return console.log('vacia');
         } else {
             let reco = this.head;
             let all = reco.dato + '';
-            while (reco.next!=null) {
+            while (reco.next!==null) {
                 reco = reco.next;
-                all += '-> ' + reco.dato                
+                all += '-> ' + reco.dato;           
             }
             return console.log(all);
         }
-    }
+    };
     LinkedList.prototype.add = function(dato) {
         if (this.head===undefined) {
             this.head = new Node(dato);
@@ -67,7 +67,7 @@ function LinkedList() {
             cola.next = new Node(dato);
         }
         this.tamaño += 1;
-    }
+    };
     LinkedList.prototype.remove = function() {
         if (this.vacia()) {
             return console.log('vacia');
@@ -82,13 +82,13 @@ function LinkedList() {
             }
             this.tamaño -= 1;
         }
-    }
+    };
     LinkedList.prototype.search = function(var_p) {
         if (this.vacia()) {
             return console.log('vacia');
         } else {
             let reco = this.head;
-            let tipoVar = typeof(var_p)!='function';
+            let tipoVar = typeof(var_p)!=='function';
             while (reco.next!=null) {
                 if ((tipoVar) ? var_p===reco['dato'] : var_p(reco['dato'])) { 
                     return reco['dato']; } 
@@ -99,7 +99,7 @@ function LinkedList() {
             
             return null;
         }
-    }
+    };
 }
 
 function Usuario(name, email, city) {
