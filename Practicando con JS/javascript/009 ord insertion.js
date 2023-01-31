@@ -18,6 +18,10 @@ function insertionSort(array) {
                     } else {
                         desde = avan-1; avan -= 2;
                     }
+                } else {
+                    if (anclarAvan!==undefined) {
+                        desde = anclarAvan; break;
+                    }
                 }
 
             }
@@ -28,7 +32,7 @@ function insertionSort(array) {
 }
 
 
-let lista = [5,8,1,0,-8,2,1,9,3,7,-5];
+let lista = [1,2,4,8,0,9,10,12,2,-1,20];
 console.log(`Lista -> ${lista}`)
 insertionSort(lista);
 console.log(`Con insertionSort -> ${lista}`);
