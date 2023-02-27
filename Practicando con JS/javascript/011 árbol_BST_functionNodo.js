@@ -1,3 +1,5 @@
+//Hecho por adalsus
+
 function Node(value) {
   this.value = value;
   this.left = null;
