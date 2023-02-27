@@ -38,7 +38,7 @@ function BinarySearchTree() {
   };
 
   BinarySearchTree.prototype.vacia = function() {
-    return (this.head===undefined || this.root === null) ? true : false;
+    return (this.root===undefined || this.root === null) ? true : false;
   };
 
   BinarySearchTree.prototype._insertIterative = (value) => {
